@@ -1,6 +1,13 @@
 // In this file you can override the default variables of Bootstrap
 // Do you want primary to be green? Just add "$primary: #00FF00;" to this file and the theme will automatically compile the scss for you.
 
+// custom fonts
+$font-family-sans-serif: 'crimson_textroman', serif;
+$font-family-base: $font-family-sans-serif;
+$font-family-serif: 'crimson_textroman', serif;
+$font-family-base: $font-family-serif;
+
+
 /*-----------------------------------------------------------------------------
 
   ATTENTION! This is the parent-theme's file. Your work will be lost by the 
