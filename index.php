@@ -93,7 +93,7 @@ get_header();
                           <?php if (apply_filters('bootscore/loop/excerpt', true, 'index')) : ?>
                             <p class="<?= apply_filters('bootscore/class/loop/card-text/excerpt', 'card-text', 'index'); ?>">
                               <a class="text-body text-decoration-none" href="<?php the_permalink(); ?>">
-                                <?= strip_tags(get_the_excerpt()); ?>
+                                <?= the_content() ?>
                               </a>
                             </p>
                           <?php endif; ?>
