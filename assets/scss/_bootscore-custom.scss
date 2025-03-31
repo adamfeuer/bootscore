@@ -164,5 +164,21 @@ blockquote p {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 3.25rem;
+}
+
+h2 {
+  font-size: 2.25rem !important;
+}
+
+.card {
+  border-right: 0px transparent;
+  border-left: 0px transparent;
+  border-top: 0px transparent;
+}
+
+.wp-block-separator {
+  position: relative;
+  width: 70%;
+  left: 15%;
 }
