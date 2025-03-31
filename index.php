@@ -84,8 +84,6 @@ get_header();
                                   <?php endif; ?>
                                 <span>
                               </p>
-
-                              </p>
                             <?php endif; ?>
                           <?php endif; ?>
 

@@ -14,16 +14,19 @@ $line-height-base: 1.5;
 
 $nav-link-font-size: 1.0rem;
 
-$foo: rgba(44, 56, 64, .65) !important;
+$navbar-light-brand-color: rgba(44, 56, 64, .65) !important;
+
+$badge-padding-x: 0.4rem;
+$badge-padding-y: 0.4rem;
 
 /*-----------------------------------------------------------------------------
 
-  ATTENTION! This is the parent-theme's file. Your work will be lost by the 
+  ATTENTION! This is the parent-theme's file. Your work will be lost by the
   next update!
 
   Wouldn't you prefer to use one of our child themes and be update-safe?
 
-  Bootscore Child: 
+  Bootscore Child:
   https://github.com/bootscore/bootscore-child/releases/latest/download/bootscore-child.zip
 
 -----------------------------------------------------------------------------*/
