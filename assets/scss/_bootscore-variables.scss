@@ -2,11 +2,19 @@
 // Do you want primary to be green? Just add "$primary: #00FF00;" to this file and the theme will automatically compile the scss for you.
 
 // custom fonts
-$font-family-sans-serif: 'crimson_textroman', serif;
+$font-family-sans-serif: 'crimson_text', serif;
 $font-family-base: $font-family-sans-serif;
-$font-family-serif: 'crimson_textroman', serif;
+$font-family-serif: 'crimson_text', serif;
 $font-family-base: $font-family-serif;
 
+$font-size-base: 1.5rem;
+$font-size-sm: 1.0rem;
+$font-size-lg: 1.75rem;
+$line-height-base: 1.5;
+
+$nav-link-font-size: 1.0rem;
+
+$foo: rgba(44, 56, 64, .65) !important;
 
 /*-----------------------------------------------------------------------------
 

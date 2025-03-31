@@ -21,18 +21,18 @@ if (!function_exists('bootscore_category_badge')) :
   function bootscore_category_badge() {
     // Hide category and tag text for pages.
     if ('post' === get_post_type()) {
-      echo '<p class="category-badge">';
+      echo '<span class="category-badge">';
       $thelist = '';
       $i       = 0;
       foreach (get_the_category() as $category) {
         if (0 < $i) $thelist .= ' ';
         // Apply a filter to modify the class name
-        $class = apply_filters('bootscore/class/badge/category', 'badge bg-primary-subtle text-primary-emphasis text-decoration-none');
+        $class = apply_filters('bootscore/class/badge/category', 'badge bg-primary-subtle text-primary text-decoration-none');
         $thelist .= '<a href="' . esc_url(get_category_link($category->term_id)) . '" class="' . esc_attr($class) . '">' . $category->name . '</a>';
         $i ++;
       }
       echo $thelist;
-      echo '</p>';
+      echo '</span>';
     }
   }
 endif;

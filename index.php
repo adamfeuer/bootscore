@@ -27,12 +27,6 @@ get_header();
         <main id="main" class="site-main">
 
           <!-- Header -->
-          <div class="p-5 text-center bg-body-tertiary rounded mb-4">
-            <?php do_action( 'bootscore_before_title', 'index' ); ?>
-            <h1 class="entry-title <?= apply_filters('bootscore/class/entry/title', '', 'index'); ?>"><?php bloginfo('name'); ?></h1>
-            <?php do_action( 'bootscore_after_title', 'index' ); ?>
-            <p class="lead mb-0"><?php bloginfo('description'); ?></p>
-          </div>
 
           <!-- Post List -->
           <div class="row">
@@ -61,16 +55,12 @@ get_header();
                           
                           <div class="d-flex justify-content-between gap-3">
 
-                            <?php if (apply_filters('bootscore/loop/category', true, 'index')) : ?>
-                              <?php bootscore_category_badge(); ?>
-                            <?php endif; ?>
-
                             <?php if (is_sticky() ) { ?>
                               <p class="sticky-badge"><span class="badge text-bg-danger"><?= apply_filters('bootscore/icon/star', '<i class="fa-solid fa-star"></i>'); ?></span></p>
                             <?php } ?>
-                            
+
                           </div>
-                          
+
                           <?php do_action('bootscore_before_loop_title', 'index'); ?>
 
                           <a class="text-body text-decoration-none" href="<?php the_permalink(); ?>">
@@ -80,12 +70,21 @@ get_header();
                           <?php if (apply_filters('bootscore/loop/meta', true, 'index')) : ?>
                             <?php if ('post' === get_post_type()) : ?>
                               <p class="meta small mb-2 text-body-secondary">
-                                <?php
-                                bootscore_date();
-                                bootscore_author();
-                                bootscore_comments();
-                                bootscore_edit();
-                                ?>
+                                <span>
+                                  <?php
+                                  bootscore_date();
+                                  bootscore_author();
+                                  bootscore_comments();
+                                  bootscore_edit();
+                                  ?>
+                                </span>
+                                <span>
+                                  <?php if (apply_filters('bootscore/loop/category', true, 'index')) : ?>
+                                    &nbsp;&nbsp;<?php bootscore_category_badge(); ?>
+                                  <?php endif; ?>
+                                <span>
+                              </p>
+
                               </p>
                             <?php endif; ?>
                           <?php endif; ?>

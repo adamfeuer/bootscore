@@ -45,18 +45,17 @@ defined('ABSPATH') || exit;
   <header id="masthead" class="<?= apply_filters('bootscore/class/header', 'sticky-top bg-body-tertiary'); ?> site-header">
 
     <?php do_action( 'bootscore_after_masthead_open' ); ?>
-    
+
     <nav id="nav-main" class="navbar <?= apply_filters('bootscore/class/header/navbar/breakpoint', 'navbar-expand-lg'); ?>">
 
       <div class="<?= apply_filters('bootscore/class/container', 'container', 'header'); ?>">
-        
+
         <?php do_action( 'bootscore_before_navbar_brand' ); ?>
-        
+
         <!-- Navbar Brand -->
         <a class="<?= apply_filters('bootscore/class/header/navbar-brand', 'navbar-brand'); ?>" href="<?= esc_url(home_url()); ?>">
-          <img src="<?= esc_url(apply_filters('bootscore/logo', get_stylesheet_directory_uri() . '/assets/img/logo/logo.svg', 'default')); ?>" alt="<?php bloginfo('name'); ?> Logo" class="d-td-none">
-          <img src="<?= esc_url(apply_filters('bootscore/logo', get_stylesheet_directory_uri() . '/assets/img/logo/logo-theme-dark.svg', 'theme-dark')); ?>" alt="<?php bloginfo('name'); ?> Logo" class="d-tl-none">
-        </a>  
+            <span class="site-title"><?= apply_filters('bootscore/class/entry/title', '', 'index'); ?><?php bloginfo('name'); ?></span><span class="site-description"> – <?php bloginfo('description'); ?></span>
+        </a>
 
         <!-- Offcanvas Navbar -->
         <div class="offcanvas offcanvas-<?= apply_filters('bootscore/class/header/offcanvas/direction', 'end', 'menu'); ?>" tabindex="-1" id="offcanvas-navbar">
