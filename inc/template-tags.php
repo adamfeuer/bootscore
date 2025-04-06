@@ -75,7 +75,7 @@ if (!function_exists('bootscore_date')) :
       if (!$show_updated_time) {
         $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
       } else {
-        $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time> <span class="time-updated-separator">/</span> <time class="updated" datetime="%3$s">%4$s</time>';
+        $time_string = 'Created <time class="entry-date published" datetime="%1$s">%2$s</time> <span class="time-updated-separator">/</span> Updated <time class="updated" datetime="%3$s">%4$s</time>';
       }
     }
 
