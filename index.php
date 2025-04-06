@@ -52,7 +52,7 @@ get_header();
 
                       <div class="<?= apply_filters('bootscore/class/loop/card/content/col', 'col', 'index'); ?>">
                         <div class="<?= apply_filters('bootscore/class/loop/card/body', 'card-body', 'index'); ?>">
-                          
+
                           <div class="d-flex justify-content-between gap-3">
 
                             <?php if (is_sticky() ) { ?>
